@@ -1,0 +1,30 @@
+[package]
+name = "rust_music_player"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# GUI 框架
+iced = { version = "0.13", features = ["tokio", "image", "wgpu"] }
+
+# 音频处理
+rodio = "0.21"
+
+# 文件对话框
+rfd = "0.14"
+
+# 日志
+log = "0.4"
+env_logger = "0.11"
+
+# 异步运行时
+tokio = { version = "1.0", features = ["rt", "macros", "fs", "time"] }
+
+# 其他实用依赖
+serde = { version = "1.0", features = ["derive"] }
+dirs = "5.0"
+anyhow = "1.0"
+
+# 为了更好的中文支持，添加字体相关依赖
+fontconfig-parser = "0.5"
+ab_glyph = "0.2"
