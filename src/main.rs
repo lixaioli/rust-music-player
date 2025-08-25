@@ -209,7 +209,7 @@ impl MusicPlayer {
         container(
             column![
                 // 标题
-                text("Rust 音乐播放器")
+                text("🎵 洛依音乐播放器")
                     .size(40)
                     .color(Color::from_rgb(0.2, 0.3, 0.7)),
                 
@@ -320,10 +320,10 @@ async fn main() -> iced::Result {
         .filter_level(log::LevelFilter::Info)
         .init();
 
-    info!("启动 Rust 音乐播放器 v0.2.0");
+    info!("启动洛依音乐播放器 v1.0.0");
     
     // 创建应用程序并设置默认字体
-    let app = iced::application("🎵 Rust 音乐播放器", MusicPlayer::update, MusicPlayer::view)
+    let app = iced::application("🎵 洛依音乐播放器", MusicPlayer::update, MusicPlayer::view)
         .window_size(Size::new(800.0, 600.0))
         .theme(|_| iced::Theme::Light)
         .default_font(Font::with_name("Microsoft YaHei")); // 设置默认字体

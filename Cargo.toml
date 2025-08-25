@@ -1,7 +1,13 @@
 [package]
 name = "rust_music_player"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2024"
+description = "洛依音乐播放器 - 一个美观的音乐播放器"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+repository = "https://github.com/lixaioli/rust-music-player"
+keywords = ["music", "player", "audio", "gui", "iced"]
+categories = ["multimedia::audio"]
 
 [dependencies]
 # GUI 框架
